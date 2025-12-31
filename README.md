@@ -6,7 +6,25 @@ In addition to the summary statistics, we plot technical indicators used for tra
 `BTC-sar-rsi-ema.ipynb` can be viewed directly in Github
 
 ## Prerequisites
-Install the following Python packages:
+- Familiarity with jupyterlab
+- Install dependencies using either `conda` or `pip` and run jupyter
+
+### Option 1: Conda (recommended)
+Create the environment from `environment.yml`:
+
 ```bash
-pip install pandas matplotlib mplfinance ta numpy
+conda env create -f environment.yml
+conda activate btc-jupyter
+
+# Start the server
+jupyter lab
+```
+### Option 2: pip
+If you prefer `pip`, create and activate a virtual environment first, then install dependencies:
+
+```bash
+pip install pandas numpy matplotlib mplfinance ta tabulate jupyterlab
+
+# Start the sever
+jupyter lab
 ```
